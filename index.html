@@ -4,31 +4,87 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/css/css-sprites.css" />
     <title>Document</title>
   </head>
   <body>
     <div class="app">
       <div class="app-header item">
         <div class="app-search">search</div>
-        <nav class="app-nav"><ul class="app-nav-items">
+        <nav class="app-nav">
+          <ul class="app-nav-items">
             <li class="nav-item"><a href="">List your property</a></li>
             <li class="nav-item"><a href="">Trips </a></li>
             <li class="nav-item"><a href="">Support </a></li>
-        </ul></nav>
-    </div>
-      <div class="app-sidebar item">
-        <p>logo</p>
-        <div class="app-filters">
-          <div class="filter-item">Bedrooms</div>
-          <div class="filter-item">Bathrooms</div>
-          <div class="filter-item filter-price">Price Range</div>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="app-sidebar">
+        <div class="sidebar-logo">
+          <img src="assets/images/sidebar-logo.svg" alt="" />
         </div>
-        <hr />
+        <div class="app-filters">
+          <div class="filter-item">
+            <label for="bedrooms">Bedrooms</label>
+            <div class="select-box">
+              <i class="css-sprite-white-caret-down icon"></i>
+              <select name="bedrooms" id="bedrooms">
+                <option value="1">1</option>
+                <option value="2">2</option>
+              </select>
+            </div>
+          </div>
+          <div class="filter-item">
+            <label for="bedrooms">Bathrooms</label>
+            <div class="select-box">
+              <i class="css-sprite-white-caret-down icon"></i>
+              <select name="bedrooms" id="bedrooms">
+                <option value="1">1</option>
+                <option value="2">2</option>
+              </select>
+            </div>
+          </div>
+          <div class="filter-item filter-price">
+            <label for="bedrooms">Price Range</label>
+            <div class="select-box">
+              <i class="css-sprite-white-caret-down icon"></i>
+              <select name="bedrooms" id="bedrooms">
+                <option value="1">1</option>
+                <option value="2">2</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        
         <div class="location-types">
-          <div class="type-item">House</div>
-          <div class="type-item">Apartment</div>
-          <div class="type-item">TownHouse</div>
-          <div class="type-item">Loft</div>
+          <p>Property Type</p>
+
+          <div class="type-item">
+            <input type="radio" id="home" name="radio-group" />
+            <label for="home"
+              ><span><span></span></span> House</label
+            >
+          </div>
+          <div class="type-item">
+              <input type="radio" id="apartment" name="radio-group" />
+              <label for="apartment"
+                ><span><span></span></span>Apartment</label
+              >
+          </div>
+          <div class="type-item">
+              <input type="radio" id="loft" name="radio-group" />
+              <label for="loft"
+                ><span><span></span></span>Loft</label
+              >
+          </div>
+          <div class="type-item">
+              <input type="radio" id="townhouse" name="radio-group" />
+              <label for="townhouse"
+                ><span><span></span></span>TownHouse</label
+              >
+          </div>
+          
         </div>
       </div>
       <div class="app-content item">
